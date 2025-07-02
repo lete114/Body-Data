@@ -1,8 +1,8 @@
 {
   "name": "body-data",
   "type": "module",
-  "version": "2.0.1",
-  "description": "A lightweight Node.js utility to extract query parameters and request body data from `IncomingMessage`. Supports common `Content-Type` formats and safe fallbacks.",
+  "version": "2.0.2",
+  "description": "A lightweight, zero-dependency utility for extracting query parameters and request body data from both Node.js IncomingMessage and Web standard Request objects. Supports Node.js, Deno, Bun, Cloudflare Workers, and more. Type-safe, auto-adaptive, and supports all common Content-Type formats.",
   "author": "Lete114 <me@imlete.cn>",
   "license": "MIT",
   "homepage": "https://github.com/Lete114/Body-Data#readme",

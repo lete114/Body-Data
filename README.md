@@ -7,10 +7,13 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
-A lightweight Node.js utility to extract query parameters and request body data from `IncomingMessage`. Supports common `Content-Type` formats and safe fallbacks.
+A lightweight, zero-dependency utility for extracting query parameters and request body data from both Node.js IncomingMessage and Web standard Request objects. Fully supports Node.js (18+), Deno, Bun, Cloudflare Workers, and any modern JavaScript runtime. Type-safe, auto-adaptive, and supports all common Content-Type formats.
 
 ## ✨ Features
 
+- ✅ Works in Node.js (18+), Deno, Bun, Cloudflare Workers, and browsers
+- ✅ Accepts both Node.js IncomingMessage and Web standard Request objects
+- ✅ Type-safe with full TypeScript generics support
 - ✅ Extract query parameters from `GET` requests
 - ✅ Parse request body from `POST` requests
 - ✅ Supports `application/json`, `x-www-form-urlencoded`, `text/plain`, `multipart/form-data`, and others
