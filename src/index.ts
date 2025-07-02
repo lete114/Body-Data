@@ -35,14 +35,14 @@ export function toWebRequest(req: IncomingMessage | Request): Request {
  * @param {IOptions} [options] - Optional settings for parsing the request body.
  * @returns {Promise<{ params: Record<string, any>; body: Record<string, any> }>} An object containing `params` and `body`.
  */
-export async function bodyData<T extends Record<string, any>>(
+export async function bodyData<P extends Record<string, any>, B extends Record<string, any>>(
   req: IncomingMessage | Request,
   options: IOptions = {},
-): Promise<{ params: T, body: T }> {
+): Promise<{ params: P, body: B }> {
   const webReq = toWebRequest(req)
   return {
-    params: getParams<T>(webReq),
-    body: await getBody<T>(webReq, options),
+    params: getParams<P>(webReq),
+    body: await getBody<B>(webReq, options),
   }
 }
 
